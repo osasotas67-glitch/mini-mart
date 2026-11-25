@@ -1,0 +1,5 @@
+[build]
+  # The site is a plain static HTML page shipped inside a zip archive.
+  # Extract it at build time and publish the extracted folder.
+  command = "rm -rf _site && unzip -o -q everyday_mart_website.zip -d _site"
+  publish = "_site/everyday_mart_site"
